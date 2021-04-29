@@ -3,11 +3,35 @@
     <head>
         <title>Google Homepage</title>
         <style>
-        
+            .center-box{
+                text-align: center;
+                margin-top: 300px;
+                display: block
+            }
+            .search-field
+            {
+                text-align: center;
+                margin-top: 50px;
+                display: block;
+            }
+            .test{
+                margin-left: -150;
+            }
         </style>
     </head>
     <body>
-        <img src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        <form> <input type="text"></form>
+        <div class="center-box">
+            <img src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+        </div>
+            <form class="search-field">
+                <p>
+                    <input type="text" id="username" placeholder="" />
+                <p>
+                    <button class="test" id="submitbutton" type="button">Google Search</button>
+                </p>
+                <p>
+                    <button id="submitbutton" type="button">I'm feeling lucky</button>
+                </p>
+        </form>
     </body>
 </html>
