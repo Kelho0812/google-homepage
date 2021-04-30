@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Google Homepage</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
         <style>
             .center-box{
                 text-align: center;
@@ -11,27 +13,67 @@
             .search-field
             {
                 text-align: center;
-                margin-top: 50px;
+                margin-top: 40px;
                 display: block;
             }
-            .test{
-                margin-left: -150;
+            .google-search-button
+            {
+                padding: 2px 20px;
+                position: relative;
+                right: 20px;
+                top: 10px;
+            }
+            .feeling-lucky-button
+            {
+                padding: 2px 20px;
+                position: relative;
+                left: 40px;
+                top: 10px;
+            }
+            #search-box
+            {
+                width: 400px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border: groove 2px gainsboro;
+                border-radius: 10px;
+                text-indent: 30px;
+                
+            }
+            #search-box:focus
+            {
+                box-shadow: 10px grey;
+                outline: 0;
+            }
+            #search-icon
+            {
+                position: relative;
+                left: 35px;
+                top: 11px;
+                padding: 3px;
+            }
+            .lingua
+            {
+                color: blue;
             }
         </style>
     </head>
-    <body>
+    <body style="text-align: center;">
         <div class="center-box">
-            <img src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
+            <img src="https://cutt.ly/Lbh5aUc" alt="Google Logo">
         </div>
             <form class="search-field">
                 <p>
-                    <input type="text" id="username" placeholder="" />
+                        <img id="search-icon" src="/home/kelho/Downloads/search_black_24dp.svg" alt="Search Icon">
+                        <input type="text" id="search-box" placeholder="Search here..." />
                 <p>
-                    <button class="test" id="submitbutton" type="button">Google Search</button>
-                </p>
-                <p>
-                    <button id="submitbutton" type="button">I'm feeling lucky</button>
+                    <button class="google-search-button" id="submitbutton" type="button">Google Search</button>
+                    <button class="feeling-lucky-button" id="submitbutton" type="button">I'm feeling lucky</button>
                 </p>
         </form>
+        <p style="font-size: 13px; margin-top: 40px;text-align: center;">
+            Disponibilizado pelo Google em: 
+            <span class="lingua"> Inglês </span>
+        </p>
     </body>
 </html>
