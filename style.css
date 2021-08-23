@@ -1,11 +1,15 @@
+* {
+  font-family: Google Sans, Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
 .topmenu {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   margin: 10px 10px;
   padding: 2rem;
   font-family: Arial, sans-serif;
   font-size: 13px;
-  color: rgba(0, 0, 0, 0.87);
   position: relative;
 }
 
@@ -17,7 +21,19 @@
 }
 
 .images {
+  text-decoration: none;
+  font-size: 24px;
+  line-height: 24px;
   margin: 10px 10px;
+}
+
+a {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+a:hover {
+  /* This adds Underline when hovering links*/
+  text-decoration: underline;
 }
 
 .searchfield_logo {
@@ -38,17 +54,81 @@
 
 .searchbox {
   border-radius: 20px;
-  width: 20rem;
-  height: 2rem;
-  padding-left: 20px;
+  width: auto;
+  min-width: 50rem;
+  height: 44px;
+  padding-left: 60px;
   font-size: 16px;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
   text-indent: 0px;
   text-shadow: none;
+  border: 1px solid #dfe1e5;
+  position: relative;
+  font-size: 24px;
+  color: #202124;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .searchbox:focus-visible {
   outline: none;
+}
+
+.searchbox:hover {
+  background-color: #fff;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.searchicon {
+  position: relative;
+  left: 1rem;
+  top: -2.5rem;
+  height: 24px;
+  width: 24px;
+  color: #9aa0a6;
+}
+
+.material-icons-outlined {
+  color: #5f6368;
+  opacity: 1;
+  font-size: 48px;
+}
+
+.settingsIcon {
+  color: #5f6368;
+  margin-left: 10px;
+  font-size: 36px;
+}
+
+.settingsIcon:hover {
+  border-radius: 50%;
+  background-color: rgba(60, 64, 67, 0.1);
+}
+
+.signInButton {
+  background: #1a73e8;
+  color: white;
+  padding: 9px 15px;
+  margin: 10px 10px;
+  line-height: 24px;
+  text-decoration: none;
+  width: auto;
+  height: 1.5rem;
+  font-size: 24px;
+  border-radius: 5px;
+  min-width: 80px;
+  margin-left: 20px;
+  padding-left: 25px;
+}
+
+.signInButton:hover {
+  background: #1a73e8da;
+  color: white;
+  text-decoration: none;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;;
 }
