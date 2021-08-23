@@ -5,24 +5,24 @@
 .topmenu {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  margin: 10px 10px;
-  padding: 2rem;
+  align-items: baseline;
+  padding: 1rem;
   font-family: Arial, sans-serif;
   font-size: 13px;
   position: relative;
+  vertical-align: middle;
 }
 
 .gmail {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 13px;
   line-height: 24px;
   margin: 10px 10px;
 }
 
 .images {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 13px;
   line-height: 24px;
   margin: 10px 10px;
 }
@@ -38,27 +38,27 @@ a:hover {
 
 .searchfield_logo {
   display: flex;
-  height: 800px;
+  height: 600px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-  margin: 100px;
-  max-width: 100%;
-  height: auto;
+  margin-top: 100px;
+  margin-bottom: -200px;
+  width: 272px;
+  height: 92px;
 }
 
 .searchbox {
   border-radius: 20px;
   width: auto;
-  min-width: 50rem;
+  min-width: 30rem;
   height: 44px;
   padding-left: 60px;
-  font-size: 16px;
   letter-spacing: normal;
   word-spacing: normal;
   text-transform: none;
@@ -66,9 +66,11 @@ a:hover {
   text-shadow: none;
   border: 1px solid #dfe1e5;
   position: relative;
-  font-size: 24px;
+  font-size: 16px;
   color: #202124;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
+  vertical-align: center;
 }
 
 .searchbox:focus-visible {
@@ -84,10 +86,12 @@ a:hover {
 .searchicon {
   position: relative;
   left: 1rem;
-  top: -2.5rem;
   height: 24px;
   width: 24px;
   color: #9aa0a6;
+  position: relative;
+  vertical-align: center;
+  margin-top: -2.1rem;
 }
 
 .material-icons-outlined {
@@ -100,6 +104,8 @@ a:hover {
   color: #5f6368;
   margin-left: 10px;
   font-size: 36px;
+  position: relative;
+  vertical-align: middle;
 }
 
 .settingsIcon:hover {
@@ -109,18 +115,16 @@ a:hover {
 
 .signInButton {
   background: #1a73e8;
+  display: flex;
   color: white;
-  padding: 9px 15px;
-  margin: 10px 10px;
-  line-height: 24px;
   text-decoration: none;
-  width: auto;
-  height: 1.5rem;
-  font-size: 24px;
+  font-size: 13px;
   border-radius: 5px;
-  min-width: 80px;
+  min-width: 100px;
+  min-height: 40px;
   margin-left: 20px;
-  padding-left: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .signInButton:hover {
@@ -130,5 +134,46 @@ a:hover {
 }
 
 .material-icons-outlined.md-36 {
-  font-size: 36px;;
+  font-size: 24px;
+}
+
+.submitButtons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.googleSearch {
+  text-decoration: none;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.iFeelLucky {
+  text-decoration: none;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  cursor:pointer;
+}
+
+.googleSearch:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.iFeelLucky:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
 }
